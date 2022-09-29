@@ -1,0 +1,23 @@
+{
+  "name": "TxChart",
+  "description": "Blockchain transfer cash flow chart",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["*://etherscan.io/*", "*://bscscan.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.etherscan.io/*"],
+      "js": ["loader.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "/images/32.png"
+  },
+  "icons": {
+    "16": "/images/16.png",
+    "32": "/images/32.png",
+    "48": "/images/48.png",
+    "128": "/images/128.png"
+  }
+}
